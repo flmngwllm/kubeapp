@@ -1,5 +1,5 @@
 apiVersion:
-kind: Deployement
+kind: Deployment
 metadata:
   name: vprodb
   labels:
@@ -22,7 +22,7 @@ spec:
               name: vpro-db-data
           ports: 
             - name: vprodb-port
-              containerport: 3306
+              containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
